@@ -9,7 +9,12 @@
   <body>
     <h1>My Super Cool Friends List</h1>
 
+    <% @friends.collect do |t| %>
+
+    <h2>Name <%=t%></h2>
+
     <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
+    <% end %>
 
   </body>
 </html>
